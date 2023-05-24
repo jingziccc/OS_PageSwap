@@ -1,0 +1,11 @@
+D:\c#\learning\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\c#\learning\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\c#\learning\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\c#\learning\WindowsFormsApp1\obj\Debug\PageSwapManagement.csproj.AssemblyReference.cache
+D:\c#\learning\WindowsFormsApp1\obj\Debug\PageSwapManagement.csproj.SuggestedBindingRedirects.cache
+D:\c#\learning\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\c#\learning\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\c#\learning\WindowsFormsApp1\obj\Debug\PageSwapManagement.csproj.GenerateResource.cache
+D:\c#\learning\WindowsFormsApp1\obj\Debug\PageSwapManagement.csproj.CoreCompileInputs.cache
+D:\c#\learning\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\c#\learning\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
