@@ -105,7 +105,7 @@ namespace WindowsFormsApp1
             if (isInMemory)
             {
                 //命中，标红显示
-                AddToLog(string.Format("命中，在PAGE{0}", page));
+                AddToLog(string.Format("命中，在PAGE{0}", page+1));
                 HighlightLabel(curIns % Rows, page);
                 pageInMemoryLUT[page] = totalCount;
                 lastPage = page;
@@ -168,15 +168,7 @@ namespace WindowsFormsApp1
             Random random = new Random();
             instructions = new List<int>();
             AddToLog("随机生成指令中...");
-            // 初始化Memory
-            for (int i = 0; i < PageNum; i++)
-            {
-                pageInMemory[i] = -1;
-                pageInMemoryLUT[i] = 0;//都未被使用
-            }
 
-            // 清空FIFO队列
-            q_Page = new Queue<int>(new[] { 0, 1, 2, 3 });
             while (instructions.Count < InstructionNum)
             {
                 int m = random.Next(0, InstructionNum);
@@ -345,6 +337,15 @@ namespace WindowsFormsApp1
             FIFO_radioButton.Enabled = true;
             LRU_radioButton.Enabled = true;
             instructionMessage.Clear();
+            // 初始化Memory
+            for (int i = 0; i < PageNum; i++)
+            {
+                pageInMemory[i] = -1;
+                pageInMemoryLUT[i] = 0;//都未被使用
+            }
+
+            // 清空FIFO队列
+            q_Page = new Queue<int>(new[] { 0, 1, 2, 3 });
             for (int row = 0; row < Rows; row++)
                 for (int col = 0; col < Columns; col++)
                 {
@@ -364,7 +365,9 @@ namespace WindowsFormsApp1
                 "操作系统请求调页存储管理方式模拟项目\n" +
                 "同济大学软件学院\n" +
                 "2152831陈峥海\n" +
-                "红色表示指令在内存中，命中";
+                "红色表明指令在内存中，命中\n"+
+                "黄色表明指令在调页之后的位置"
+                ;
             string caption = "About";
             MessageBox.Show(message, caption);
         }
